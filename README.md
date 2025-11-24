@@ -1,4 +1,4 @@
-# Intruder Detection
+# Smart Housing with Intruder Detection
 Detection of Intruder(for the backdoor security camera)
 This project is designed to prevent unauthorized access or suspicious activities. It leverages motion detection, sensors, or anomaly-based techniques to ensure security and trigger alerts when an intruder is detected.
 
