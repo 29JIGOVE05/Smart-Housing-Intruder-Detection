@@ -5,7 +5,6 @@ from kivy.animation import Animation
 from kivy.clock import Clock
 from kivy.core.window import Window
 
-# Set app window size
 #Window.size = (600, 400)
 
 class LoadingScreen(BoxLayout):
