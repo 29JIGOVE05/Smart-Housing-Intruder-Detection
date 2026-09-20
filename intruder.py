@@ -9,7 +9,7 @@ bullet_text = '‼️INTRUSION DETECTED AT THE BACKDOOR‼️'
 
 # Initialize pygame mixer for alert sound
 pygame.mixer.init()
-alert_sound = pygame.mixer.Sound('/Users/nikhiltripathi/Desktop/alert.wav')
+alert_sound = pygame.mixer.Sound('/Users/georg/Desktop/alert.wav')
 
 # Configuration
 MIN_CONTOUR_AREA = 2000  # Minimum area of motion to trigger an alert
