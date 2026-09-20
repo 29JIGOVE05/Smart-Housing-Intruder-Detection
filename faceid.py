@@ -49,7 +49,7 @@ class CamApp(App):
         layout.add_widget(self.verification_label)
 
         # Load tensorflow/keras model
-        self.model = tf.keras.models.load_model('/Users/nikhiltripathi/Desktop/Face_detection/app/siamesemodel.h5', custom_objects={'L1Dist':L1Dist})
+        self.model = tf.keras.models.load_model('/Users/georg/Desktop/Face_detection/app/siamesemodel.h5', custom_objects={'L1Dist':L1Dist})
 
         # Setup video capture device
         self.capture = cv2.VideoCapture(0)
@@ -135,7 +135,7 @@ class CamApp(App):
     def verify(self, *args):
         detection_threshold = 0.99
         verification_threshold = 0.7
-        app_data = '/Users/nikhiltripathi/Desktop/Face_detection/app/application_data/'
+        app_data = '/Users/georg/Desktop/Face_detection/app/application_data/'
 
         # Capture input image from webcam
         self.SAVE_PATH = os.path.join(app_data, 'input_image', 'input_image.jpg')
