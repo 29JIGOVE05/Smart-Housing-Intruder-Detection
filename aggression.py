@@ -18,7 +18,7 @@ pb = Pushbullet(PUSHBULLET_API_KEY)
 
 # Pygame setup for alert sound
 pygame.mixer.init()
-alert_sound = pygame.mixer.Sound('/Users/nikhiltripathi/Desktop/alert.wav')
+alert_sound = pygame.mixer.Sound('/Users/georg/Desktop/alert.wav')
 
 # OpenCV setup
 cap = cv2.VideoCapture(0)
@@ -30,7 +30,7 @@ mpDraw = mp.solutions.drawing_utils
 
 # Load the LSTM model
 custom_objects = {'Orthogonal': tf.keras.initializers.Orthogonal, 'Sequential': Sequential}
-with h5py.File("/Users/nikhiltripathi/Desktop/george/LSTM-Actions-Recognition-main/lstm-model.h5", 'r') as f:
+with h5py.File("/Users/georg/Desktop/george/LSTM-Actions-Recognition-main/lstm-model.h5", 'r') as f:
     model_config = f.attrs.get('model_config')
     model_config = json.loads(model_config)
 
@@ -62,7 +62,7 @@ buffer_size = fps * 10  # 10-second buffer
 frame_buffer = []
 
 # Create directory for video storage
-video_dir = "/Users/nikhiltripathi/Desktop/george/VideoSegments"
+video_dir = "/Users/georg/Desktop/george/VideoSegments"
 if not os.path.exists(video_dir):
     os.makedirs(video_dir)
 
